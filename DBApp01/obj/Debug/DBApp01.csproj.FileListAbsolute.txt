@@ -31,26 +31,3 @@ C:\Users\new\Desktop\DBApp01\DBApp01\obj\Debug\DBApp01.Form5.resources
 C:\Users\new\Desktop\DBApp01\DBApp01\obj\Debug\DBApp01.Form6.resources
 C:\Users\new\Desktop\DBApp01\DBApp01\obj\Debug\DBApp01.Properties.Resources.resources
 C:\Users\new\Desktop\DBApp01\DBApp01\obj\Debug\DBApp01.csproj.GenerateResource.Cache
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\bin\Debug\DBApp01.exe.config
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.exe
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.pdb
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\bin\Debug\DBApp01.exe
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\bin\Debug\DBApp01.pdb
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\bin\Debug\System.Data.SQLite.dll
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.csprojResolveAssemblyReference.cache
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.AddDoctorF.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.AddPatientF.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form1.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form10.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form11.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form12.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form2.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form3.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form4.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form5.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form6.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form7.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form8.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Form9.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.Properties.Resources.resources
-C:\Users\Ahmed Shaalan\Desktop\DBMS_Project\DBApp01\obj\Debug\DBApp01.csproj.GenerateResource.Cache
