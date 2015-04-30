@@ -125,10 +125,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe WP", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(144, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(292, 25);
+            this.label4.Size = new System.Drawing.Size(294, 24);
             this.label4.TabIndex = 12;
             this.label4.Text = "Add a new Pateint Information:";
             // 

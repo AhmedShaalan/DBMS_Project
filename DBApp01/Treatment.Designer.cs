@@ -1,6 +1,6 @@
 ﻿namespace DBApp01
 {
-    partial class Form6
+    partial class Treatment
     {
         /// <summary>
         /// Required designer variable.
