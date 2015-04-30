@@ -91,6 +91,11 @@ namespace DBApp01
             insert.Show();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
      
     }
 }
