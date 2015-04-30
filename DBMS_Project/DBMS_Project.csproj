@@ -7,8 +7,8 @@
     <ProjectGuid>{2312665F-85B4-4A7A-B0DA-D2EDE39F3E7D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DBApp01</RootNamespace>
-    <AssemblyName>DBApp01</AssemblyName>
+    <RootNamespace>DBMS_Project</RootNamespace>
+    <AssemblyName>DBMS_Project</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -168,6 +168,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Hospital.db" />
     <None Include="Properties\Settings.settings">
