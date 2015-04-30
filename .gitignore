@@ -156,3 +156,5 @@ $RECYCLE.BIN/
 .DS_Store
 DBApp01/Hospital.db
 DBApp01/obj/Debug/DBApp01.csproj.FileListAbsolute.txt
+DBApp01/obj/
+DBApp01/bin/
