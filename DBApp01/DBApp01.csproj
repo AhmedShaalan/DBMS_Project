@@ -50,18 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDoctorF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddDoctorF.Designer.cs">
-      <DependentUpon>AddDoctorF.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddPatientF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddPatientF.Designer.cs">
-      <DependentUpon>AddPatientF.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,12 +124,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddDoctorF.resx">
-      <DependentUpon>AddDoctorF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddPatientF.resx">
-      <DependentUpon>AddPatientF.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

@@ -106,5 +106,10 @@ namespace DBApp01
             }
         }
 
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

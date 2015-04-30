@@ -108,7 +108,7 @@
             this.groupBox3.Size = new System.Drawing.Size(200, 100);
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Delete a Nurse";
+            this.groupBox3.Text = "Delete a Patient";
             // 
             // textBox2
             // 
@@ -137,7 +137,7 @@
             this.groupBox4.Size = new System.Drawing.Size(200, 100);
             this.groupBox4.TabIndex = 22;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Search for a Nurse";
+            this.groupBox4.Text = "Search for a Patient";
             // 
             // label4
             // 

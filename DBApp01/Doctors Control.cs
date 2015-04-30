@@ -92,7 +92,12 @@ namespace DBApp01
                 }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
             SearchButton.Enabled = true;
             if (string.IsNullOrWhiteSpace(textBox1.Text))
@@ -108,12 +113,10 @@ namespace DBApp01
                 textBox1.Text = "";
                 return;
             }
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            
             DeleteButton.Enabled = true;
             if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
@@ -128,11 +131,6 @@ namespace DBApp01
                 textBox2.Text = "";
                 return;
             }
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

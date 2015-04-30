@@ -99,6 +99,7 @@ namespace DBApp01
                         if (i == 1)
                         {
                             MessageBox.Show("Deleted Successfuly ...");
+                            RefreshButton.PerformClick();
                         }
                     }
                     catch (Exception ex)
@@ -106,6 +107,42 @@ namespace DBApp01
                         MessageBox.Show(ex.Message);
                     }
                 }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            SearchButton.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                SearchButton.Enabled = false;
+                return;
+            }
+
+            int checkNum;
+            if (!int.TryParse(textBox1.Text, out checkNum))
+            {
+                MessageBox.Show("ID is numbers only!");
+                textBox1.Text = "";
+                return;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            DeleteButton.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                DeleteButton.Enabled = false;
+                return;
+            }
+
+            int checkNum;
+            if (!int.TryParse(textBox2.Text, out checkNum))
+            {
+                MessageBox.Show("ID is numbers only!");
+                textBox2.Text = "";
+                return;
             }
         }
     }

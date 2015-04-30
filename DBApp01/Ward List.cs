@@ -50,13 +50,32 @@ namespace DBApp01
                 }
 
             }
-
-        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            button2.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                button2.Enabled = false;
+            }
+
+            int checkText;
+            if (int.TryParse(textBox1.Text, out checkText))
+            {
+                MessageBox.Show("Please enter a valid type");
+                return;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

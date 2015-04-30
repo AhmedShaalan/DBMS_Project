@@ -77,11 +77,11 @@ namespace DBApp01
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            SubmitButton.Enabled = true;
             if (string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 SubmitButton.Enabled = false;
             }
+            SubmitButton.Enabled = true;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
