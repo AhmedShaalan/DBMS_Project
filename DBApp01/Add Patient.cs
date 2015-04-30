@@ -77,12 +77,12 @@ namespace DBApp01
             using (SQLiteConnection con = new SQLiteConnection(connectStr))
             {
 
-                bool gender;
+                string gender;
 
                 if (MaleRB.Checked == true)
-                    gender = true;
+                    gender = "M";
                 else
-                    gender = false;
+                    gender = "F";
 
                 try
                 {
@@ -112,8 +112,6 @@ namespace DBApp01
                 }
 
             }
-        
-
         }
 
         private void button2_Click(object sender, EventArgs e)
