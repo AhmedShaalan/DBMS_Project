@@ -17,7 +17,7 @@ namespace DBApp01
         public Form12()
         {
             InitializeComponent();
-            connectStr = @" Data Source = C:\Users\new\Desktop\DBApp01\DBApp01\Hospital.db";
+            connectStr = @" Data Source = ..\..\Hospital.db";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,12 +45,6 @@ namespace DBApp01
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-            {
-                MessageBox.Show("No thing to search!!");
-            }
-            else
-            {
                 string sql = "select * from nurse where nurse_ID=" + textBox1.Text + ";";
                 var conn = new SQLiteConnection(connectStr);
                 try
@@ -65,17 +59,10 @@ namespace DBApp01
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
-            {
-                MessageBox.Show("No thing to Delete!!");
-            }
-            else
-            {
                 using (SQLiteConnection con = new SQLiteConnection(connectStr))
                 {
 
@@ -94,13 +81,49 @@ namespace DBApp01
                         if (i == 1)
                         {
                             MessageBox.Show("Deleted Successfuly ...");
+                            RefreshButton.PerformClick();
                         }
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
-                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            SearchButton.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                SearchButton.Enabled = false;
+                return;
+            }
+
+            int checkNum;
+            if (!int.TryParse(textBox1.Text, out checkNum))
+            {
+                MessageBox.Show("ID is numbers only!");
+                textBox1.Text = "";
+                return;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            DeleteButton.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                DeleteButton.Enabled = false;
+                return;
+            }
+
+            int checkNum;
+            if (!int.TryParse(textBox2.Text, out checkNum))
+            {
+                MessageBox.Show("ID is numbers only!");
+                textBox2.Text = "";
+                return;
             }
         }
     }

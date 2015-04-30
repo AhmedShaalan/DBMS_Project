@@ -17,7 +17,7 @@ namespace DBApp01
         public Form3()
         {
             InitializeComponent();
-            connectStr = @" Data Source = C:\Users\new\Desktop\DBApp01\DBApp01\Hospital.db";
+            connectStr = @" Data Source = ..\..\Hospital.db";
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -27,17 +27,65 @@ namespace DBApp01
 
         private void button1_Click(object sender, EventArgs e)
         {
-             using (SQLiteConnection con = new SQLiteConnection(connectStr))
+
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
+                MessageBox.Show("Please enter a name!");
+                return;
+            }
+
+            int checkText;
+            if (int.TryParse(textBox2.Text, out checkText))
+            {
+                MessageBox.Show("Please enter a valid name");
+                return;
+            }
+
+
+            if (!(string.IsNullOrWhiteSpace(textBox3.Text)))
+            {
+                int checkNum;
+                if (!int.TryParse(textBox3.Text, out checkNum))
+                {
+                    MessageBox.Show("Please enter a valid Phone number");
+                    return;
+                }
+            }
+
+
+            if (string.IsNullOrWhiteSpace(textBox4.Text))
+            {
+                MessageBox.Show("Please enter an age!");
+                return;
+            }
+
+            int checkAge;
+            if (!int.TryParse(textBox4.Text, out checkAge))
+            {
+                MessageBox.Show("Please enter a valid age!");
+                return;
+            }
+
+            if (!(MaleRB.Checked == true || FemaleRB.Checked == true))
+            {
+                MessageBox.Show("Please Select gender!");
+                return;
+            }
+            
+
+
+            using (SQLiteConnection con = new SQLiteConnection(connectStr))
+            {
+
+                bool gender;
+
+                if (MaleRB.Checked == true)
+                    gender = true;
+                else
+                    gender = false;
 
                 try
                 {
-                    bool gender ;
-
-                    if(radioButton1.Checked == true)
-                    gender = true;
-                    else
-                    gender = false;
 
                     SQLiteCommand cmd = new SQLiteCommand();
                     cmd.CommandText = @"INSERT INTO patient (patient_name,address,phone,age,gender,ward_ID) VALUES (@Name,@Address,@Phone,@Age,@Gender,@Ward)";
@@ -47,7 +95,7 @@ namespace DBApp01
                     cmd.Parameters.Add(new SQLiteParameter("@Age", textBox4.Text));
                     cmd.Parameters.Add(new SQLiteParameter("@Address", textBox1.Text));
                     cmd.Parameters.Add(new SQLiteParameter("@Ward", textBox5.Text));
-                    cmd.Parameters.Add(new SQLiteParameter("@Gender", gender ));
+                    cmd.Parameters.Add(new SQLiteParameter("@Gender", gender));
 
                     con.Open();
 
@@ -71,6 +119,37 @@ namespace DBApp01
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            SubmitButton.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                SubmitButton.Enabled = false;
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                SubmitButton.Enabled = false;
+            }
+            SubmitButton.Enabled = true;
+
+            int checkNum;
+            if (int.TryParse(textBox2.Text, out checkNum))
+            {
+                MessageBox.Show("Name must be text only!");
+                textBox2.Text = "";
+                return;
+            }
         }
 
     }

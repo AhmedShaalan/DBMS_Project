@@ -17,7 +17,7 @@ namespace DBApp01
         public Form11()
         {
             InitializeComponent();
-            connectStr = @" Data Source = C:\Users\new\Desktop\DBApp01\DBApp01\Hospital.db";
+            connectStr = @" Data Source = ..\..\Hospital.db";
         }
 
         private void Form11_Load(object sender, EventArgs e)

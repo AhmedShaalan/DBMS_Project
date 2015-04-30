@@ -158,7 +158,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.Name = "Form11";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ward Control";
             this.Load += new System.EventHandler(this.Form11_Load);
             this.groupBox2.ResumeLayout(false);

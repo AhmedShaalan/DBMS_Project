@@ -17,11 +17,28 @@ namespace DBApp01
         public Form9()
         {
             InitializeComponent();
-            connectStr = @" Data Source = C:\Users\new\Desktop\DBApp01\DBApp01\Hospital.db";
+            connectStr = @" Data Source = ..\..\Hospital.db";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (!(string.IsNullOrWhiteSpace(textBox2.Text)))
+            {
+                int checkNum;
+                if (!int.TryParse(textBox2.Text, out checkNum))
+                {
+                    MessageBox.Show("Please enter a valid quantity");
+                    textBox2.Text = "";
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a quantity");
+                return;
+
+            }
+
             using (SQLiteConnection con = new SQLiteConnection(connectStr))
             {
 
@@ -56,6 +73,20 @@ namespace DBApp01
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            SubmitButton.Enabled = true;
+            if (string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                SubmitButton.Enabled = false;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

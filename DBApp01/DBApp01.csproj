@@ -98,17 +98,17 @@
     <Compile Include="Add Patient.Designer.cs">
       <DependentUpon>Add Patient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctors List.cs">
+    <Compile Include="Doctors Control.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctors List.Designer.cs">
-      <DependentUpon>Doctors List.cs</DependentUpon>
+    <Compile Include="Doctors Control.Designer.cs">
+      <DependentUpon>Doctors Control.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patients List .cs">
+    <Compile Include="Patients Control.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patients List .Designer.cs">
-      <DependentUpon>Patients List .cs</DependentUpon>
+    <Compile Include="Patients Control.Designer.cs">
+      <DependentUpon>Patients Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Treatment.cs">
       <SubType>Form</SubType>
@@ -116,11 +116,11 @@
     <Compile Include="Treatment.Designer.cs">
       <DependentUpon>Treatment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nurse List.cs">
+    <Compile Include="Add Nurse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nurse List.Designer.cs">
-      <DependentUpon>Nurse List.cs</DependentUpon>
+    <Compile Include="Add Nurse.Designer.cs">
+      <DependentUpon>Add Nurse.cs</DependentUpon>
     </Compile>
     <Compile Include="Ward List.cs">
       <SubType>Form</SubType>
@@ -128,11 +128,11 @@
     <Compile Include="Ward List.Designer.cs">
       <DependentUpon>Ward List.cs</DependentUpon>
     </Compile>
-    <Compile Include="Drug List.cs">
+    <Compile Include="Add Drug.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Drug List.Designer.cs">
-      <DependentUpon>Drug List.cs</DependentUpon>
+    <Compile Include="Add Drug.Designer.cs">
+      <DependentUpon>Add Drug.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -160,23 +160,23 @@
     <EmbeddedResource Include="Add Patient.resx">
       <DependentUpon>Add Patient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctors List.resx">
-      <DependentUpon>Doctors List.cs</DependentUpon>
+    <EmbeddedResource Include="Doctors Control.resx">
+      <DependentUpon>Doctors Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patients List .resx">
-      <DependentUpon>Patients List .cs</DependentUpon>
+    <EmbeddedResource Include="Patients Control.resx">
+      <DependentUpon>Patients Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Treatment.resx">
       <DependentUpon>Treatment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nurse List.resx">
-      <DependentUpon>Nurse List.cs</DependentUpon>
+    <EmbeddedResource Include="Add Nurse.resx">
+      <DependentUpon>Add Nurse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ward List.resx">
       <DependentUpon>Ward List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Drug List.resx">
-      <DependentUpon>Drug List.cs</DependentUpon>
+    <EmbeddedResource Include="Add Drug.resx">
+      <DependentUpon>Add Drug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
