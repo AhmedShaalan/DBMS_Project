@@ -30,14 +30,14 @@ namespace DBApp01
 
             if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                MessageBox.Show("Please enter a name!");
+                MessageBox.Show("Please enter a name!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             int checkText;
             if (int.TryParse(textBox2.Text, out checkText))
             {
-                MessageBox.Show("Please enter a valid name");
+                MessageBox.Show("Please enter a valid name", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -47,7 +47,7 @@ namespace DBApp01
                 int checkNum;
                 if (!int.TryParse(textBox3.Text, out checkNum))
                 {
-                    MessageBox.Show("Please enter a valid Phone number");
+                    MessageBox.Show("Please enter a valid Phone number", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -55,20 +55,20 @@ namespace DBApp01
 
             if (string.IsNullOrWhiteSpace(textBox4.Text))
             {
-                MessageBox.Show("Please enter an age!");
+                MessageBox.Show("Please enter an age!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             int checkAge;
             if (!int.TryParse(textBox4.Text, out checkAge))
             {
-                MessageBox.Show("Please enter a valid age!");
+                MessageBox.Show("Please enter a valid age!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!(MaleRB.Checked == true || FemaleRB.Checked == true))
             {
-                MessageBox.Show("Please Select gender!");
+                MessageBox.Show("Please Select gender!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             
@@ -103,12 +103,12 @@ namespace DBApp01
 
                     if (i == 1)
                     {
-                        MessageBox.Show("Added a Patient Successfuly ...");
+                        MessageBox.Show("Added a Patient Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -144,7 +144,7 @@ namespace DBApp01
             int checkNum;
             if (int.TryParse(textBox2.Text, out checkNum))
             {
-                MessageBox.Show("Name must be text only!");
+                MessageBox.Show("Name must be text only!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox2.Text = "";
                 return;
             }

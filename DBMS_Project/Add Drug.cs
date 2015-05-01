@@ -27,14 +27,14 @@ namespace DBApp01
                 int checkNum;
                 if (!int.TryParse(textBox2.Text, out checkNum))
                 {
-                    MessageBox.Show("Please enter a valid quantity");
+                    MessageBox.Show("Please enter a valid quantity", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textBox2.Text = "";
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("Please enter a quantity");
+                MessageBox.Show("Please enter a quantity", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
 
             }
@@ -58,12 +58,12 @@ namespace DBApp01
 
                     if (i == 1)
                     {
-                        MessageBox.Show("Added a New Drug Successfuly ...");
+                        MessageBox.Show("Added a New Drug Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

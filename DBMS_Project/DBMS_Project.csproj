@@ -62,6 +62,12 @@
     <Compile Include="Drug Control.Designer.cs">
       <DependentUpon>Drug Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Treatment Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treatment Control.Designer.cs">
+      <DependentUpon>Treatment Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ward Control.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Drug Control.resx">
       <DependentUpon>Drug Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treatment Control.resx">
+      <DependentUpon>Treatment Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ward Control.resx">
       <DependentUpon>Ward Control.cs</DependentUpon>

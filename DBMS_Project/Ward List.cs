@@ -41,12 +41,12 @@ namespace DBApp01
 
                     if (i == 1)
                     {
-                        MessageBox.Show("Added a New Ward Successfuly ...");
+                        MessageBox.Show("Added a New Ward Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -68,7 +68,7 @@ namespace DBApp01
             int checkText;
             if (int.TryParse(textBox1.Text, out checkText))
             {
-                MessageBox.Show("Please enter a valid type");
+                MessageBox.Show("Please enter a valid type", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }

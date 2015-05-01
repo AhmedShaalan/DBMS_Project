@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using DBMS_Project;
 
 namespace DBApp01
 {
@@ -91,10 +92,17 @@ namespace DBApp01
             insert.Show();
         }
 
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Treatment_Form insert = new Treatment_Form();
+            insert.Show();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
 
      
     }

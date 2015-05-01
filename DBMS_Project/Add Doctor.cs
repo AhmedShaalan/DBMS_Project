@@ -27,7 +27,7 @@ namespace DBApp01
             int checkText;
             if (int.TryParse(textBox3.Text, out checkText))
             {
-                MessageBox.Show("Please enter a valid name");
+                MessageBox.Show("Please enter a valid name", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -37,7 +37,7 @@ namespace DBApp01
                 int checkNum;
                 if (!int.TryParse(textBox4.Text, out checkNum))
                 {
-                    MessageBox.Show("Please enter a valid Phone number");
+                    MessageBox.Show("Please enter a valid Phone number", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -62,12 +62,12 @@ namespace DBApp01
 
                     if (i == 1)
                     {
-                        MessageBox.Show("Added Successfuly ...");
+                        MessageBox.Show("Added Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

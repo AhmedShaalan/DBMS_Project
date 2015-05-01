@@ -25,7 +25,7 @@ namespace DBApp01
             int checkText;
             if (int.TryParse(textBox3.Text, out checkText))
             {
-                MessageBox.Show("Please enter a valid name");
+                MessageBox.Show("Please enter a valid name", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -35,7 +35,7 @@ namespace DBApp01
                 int checkNum;
                 if (!int.TryParse(textBox1.Text, out checkNum))
                 {
-                    MessageBox.Show("Please enter a valid Phone number");
+                    MessageBox.Show("Please enter a valid Phone number", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -45,7 +45,7 @@ namespace DBApp01
                 int checkNum;
                 if (!int.TryParse(textBox1.Text, out checkNum))
                 {
-                    MessageBox.Show("Please enter a valid Phone number");
+                    MessageBox.Show("Please enter a valid Phone number", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -71,12 +71,12 @@ namespace DBApp01
 
                     if (i == 1)
                     {
-                        MessageBox.Show("Added a Nurse Successfuly ...");
+                        MessageBox.Show("Added a Nurse Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -100,13 +100,18 @@ namespace DBApp01
             int checkNum;
             if (int.TryParse(textBox3.Text, out checkNum))
             {
-                MessageBox.Show("Name must be text only!");
+                MessageBox.Show("Name must be text only!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox3.Text = "";
                 return;
             }
         }
 
         private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

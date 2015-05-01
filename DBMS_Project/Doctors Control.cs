@@ -35,7 +35,7 @@ namespace DBApp01
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -58,7 +58,7 @@ namespace DBApp01
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
         }
 
@@ -81,13 +81,13 @@ namespace DBApp01
 
                         if (i == 1)
                         {
-                            MessageBox.Show("Deleted Successfuly ...");
+                            MessageBox.Show("Deleted Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                             button1.PerformClick();
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
         }
@@ -109,7 +109,7 @@ namespace DBApp01
             int checkNum;
             if (!int.TryParse(textBox1.Text, out checkNum))
             {
-                MessageBox.Show("ID is numbers only!");
+                MessageBox.Show("ID is numbers only!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox1.Text = "";
                 return;
             }
@@ -127,7 +127,7 @@ namespace DBApp01
             int checkNum;
             if (!int.TryParse(textBox2.Text, out checkNum))
             {
-                MessageBox.Show("ID is numbers only!");
+                MessageBox.Show("ID is numbers only!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox2.Text = "";
                 return;
             }
