@@ -147,7 +147,7 @@
             // RefreshButton
             // 
             this.RefreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.RefreshButton.Location = new System.Drawing.Point(691, 247);
+            this.RefreshButton.Location = new System.Drawing.Point(707, 247);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(75, 23);
             this.RefreshButton.TabIndex = 19;
