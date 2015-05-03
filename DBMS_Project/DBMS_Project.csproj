@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2312665F-85B4-4A7A-B0DA-D2EDE39F3E7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBMS_Project</RootNamespace>
+    <AssemblyName>DBMS_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>.\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drug Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drug Control.Designer.cs">
+      <DependentUpon>Drug Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treatment Control.Designer.cs">
+      <DependentUpon>Treatment Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ward Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward Control.Designer.cs">
+      <DependentUpon>Ward Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurse Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurse Control.Designer.cs">
+      <DependentUpon>Nurse Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Doctor.Designer.cs">
+      <DependentUpon>Add Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Patient.Designer.cs">
+      <DependentUpon>Add Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors Control.Designer.cs">
+      <DependentUpon>Doctors Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients Control.Designer.cs">
+      <DependentUpon>Patients Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treatment.Designer.cs">
+      <DependentUpon>Treatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Nurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Nurse.Designer.cs">
+      <DependentUpon>Add Nurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Ward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Ward.Designer.cs">
+      <DependentUpon>Add Ward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Drug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Drug.Designer.cs">
+      <DependentUpon>Add Drug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drug Control.resx">
+      <DependentUpon>Drug Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treatment Control.resx">
+      <DependentUpon>Treatment Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward Control.resx">
+      <DependentUpon>Ward Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurse Control.resx">
+      <DependentUpon>Nurse Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Doctor.resx">
+      <DependentUpon>Add Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Patient.resx">
+      <DependentUpon>Add Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors Control.resx">
+      <DependentUpon>Doctors Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients Control.resx">
+      <DependentUpon>Patients Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treatment.resx">
+      <DependentUpon>Treatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Nurse.resx">
+      <DependentUpon>Add Nurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Ward.resx">
+      <DependentUpon>Add Ward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Drug.resx">
+      <DependentUpon>Add Drug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Hospital.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
