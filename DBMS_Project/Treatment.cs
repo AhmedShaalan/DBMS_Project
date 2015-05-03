@@ -23,7 +23,7 @@ namespace DBApp01
         private void Form6_Load(object sender, EventArgs e)
         {
             //Paients List
-            string sql = "select patient_ID, patient_name from patient;";
+            string sql = "select patient_ID 'Patient ID', patient_name 'Patient Name' from patient;";
             var conn = new SQLiteConnection(connectStr);
             conn.Open();
             try
@@ -38,8 +38,9 @@ namespace DBApp01
             {
                 MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
             // Doctors list
-            sql = "select doc_ID,doc_name from doctors;";
+            sql = "select doc_ID 'Doctor ID', doc_name 'Doctor Name' from doctors;";
             try
             {
                 

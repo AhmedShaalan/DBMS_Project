@@ -27,7 +27,7 @@ namespace DBApp01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            const string sql = "select * from drug;";
+            const string sql = "select drug_id 'Drug ID', drug_name 'Name', drug_quantity 'Quantity', drug_attributes 'Attributes' from drug;";
             var conn = new SQLiteConnection(connectStr);
             try
             {
@@ -51,7 +51,7 @@ namespace DBApp01
         private void button3_Click(object sender, EventArgs e)
         {
 
-                string sql = "select * from drug where drug_ID="+textBox1.Text+";";
+            string sql = "select drug_id 'Drug ID', drug_name 'Name', drug_quantity 'Quantity', drug_attributes 'Attributes' from drug where drug_ID=" + textBox1.Text + ";";
                 var conn = new SQLiteConnection(connectStr);
                 try
                 {
