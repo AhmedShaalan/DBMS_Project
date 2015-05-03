@@ -59,6 +59,11 @@ namespace DBApp01
                     if (i == 1)
                     {
                         MessageBox.Show("Added a New Drug Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                       
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+
                     }
                 }
                 catch (Exception ex)

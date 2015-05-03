@@ -88,6 +88,11 @@ namespace DBApp01
                     if (i == 1)
                     {
                         MessageBox.Show("Treatment Assigned...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
                     }
                 }
                 catch (Exception ex)

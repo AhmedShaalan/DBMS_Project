@@ -104,6 +104,14 @@ namespace DBApp01
                     if (i == 1)
                     {
                         MessageBox.Show("Added a Patient Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
+                        textBox5.Text = "";
+                        MaleRB.Checked = false;
+                        FemaleRB.Checked = false;
                     }
                 }
                 catch (Exception ex)

@@ -63,6 +63,12 @@ namespace DBApp01
                     if (i == 1)
                     {
                         MessageBox.Show("Added Successfuly ...", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
+
                     }
                 }
                 catch (Exception ex)
