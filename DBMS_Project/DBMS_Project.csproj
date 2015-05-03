@@ -116,11 +116,11 @@
     <Compile Include="Add Nurse.Designer.cs">
       <DependentUpon>Add Nurse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ward List.cs">
+    <Compile Include="Add Ward.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ward List.Designer.cs">
-      <DependentUpon>Ward List.cs</DependentUpon>
+    <Compile Include="Add Ward.Designer.cs">
+      <DependentUpon>Add Ward.cs</DependentUpon>
     </Compile>
     <Compile Include="Add Drug.cs">
       <SubType>Form</SubType>
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="Add Nurse.resx">
       <DependentUpon>Add Nurse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ward List.resx">
-      <DependentUpon>Ward List.cs</DependentUpon>
+    <EmbeddedResource Include="Add Ward.resx">
+      <DependentUpon>Add Ward.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add Drug.resx">
       <DependentUpon>Add Drug.cs</DependentUpon>

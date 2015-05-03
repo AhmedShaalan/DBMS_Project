@@ -103,11 +103,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 65);
+            this.label5.Location = new System.Drawing.Point(49, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Time Needed:";
+            this.label5.Text = "Time:";
             // 
             // label6
             // 
@@ -132,7 +132,7 @@
             this.MaximizeBox = false;
             this.Name = "Form8";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ward List";
+            this.Text = "Add Ward";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

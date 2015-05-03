@@ -27,20 +27,11 @@ namespace DBApp01
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                MessageBox.Show("Please enter a name!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            int checkText;
-            if (int.TryParse(textBox2.Text, out checkText))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "^[a-zA-Z]+$"))
             {
                 MessageBox.Show("Please enter a valid name", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
 
             if (!(string.IsNullOrWhiteSpace(textBox3.Text)))
             {
@@ -51,8 +42,7 @@ namespace DBApp01
                     return;
                 }
             }
-
-
+            
             if (string.IsNullOrWhiteSpace(textBox4.Text))
             {
                 MessageBox.Show("Please enter an age!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -66,13 +56,19 @@ namespace DBApp01
                 return;
             }
 
+            int checkWID;
+            if (!int.TryParse(textBox5.Text, out checkWID))
+            {
+                MessageBox.Show("Please enter a valid Ward ID", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!(MaleRB.Checked == true || FemaleRB.Checked == true))
             {
                 MessageBox.Show("Please Select gender!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             
-
 
             using (SQLiteConnection con = new SQLiteConnection(connectStr))
             {
@@ -143,18 +139,10 @@ namespace DBApp01
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
+            SubmitButton.Enabled = true;
             if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
                 SubmitButton.Enabled = false;
-            }
-            SubmitButton.Enabled = true;
-
-            int checkNum;
-            if (int.TryParse(textBox2.Text, out checkNum))
-            {
-                MessageBox.Show("Name must be text only!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox2.Text = "";
-                return;
             }
         }
 

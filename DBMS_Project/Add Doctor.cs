@@ -24,8 +24,7 @@ namespace DBApp01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int checkText;
-            if (int.TryParse(textBox3.Text, out checkText))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "^[a-zA-Z]+$"))
             {
                 MessageBox.Show("Please enter a valid name", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

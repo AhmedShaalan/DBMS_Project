@@ -155,6 +155,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Font = new System.Drawing.Font("Tahoma", 9F);
             this.button7.Location = new System.Drawing.Point(136, 27);
             this.button7.Name = "button7";
@@ -167,6 +168,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.Font = new System.Drawing.Font("Tahoma", 9F);
             this.button8.Location = new System.Drawing.Point(158, 27);
             this.button8.Name = "button8";
@@ -179,6 +181,7 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.Font = new System.Drawing.Font("Tahoma", 9F);
             this.button9.Location = new System.Drawing.Point(136, 27);
             this.button9.Name = "button9";
@@ -191,6 +194,7 @@
             // button10
             // 
             this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Font = new System.Drawing.Font("Tahoma", 9F);
             this.button10.Location = new System.Drawing.Point(136, 75);
             this.button10.Name = "button10";
@@ -203,6 +207,7 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.Font = new System.Drawing.Font("Tahoma", 9F);
             this.button11.Location = new System.Drawing.Point(158, 75);
             this.button11.Name = "button11";
@@ -215,6 +220,7 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.Font = new System.Drawing.Font("Tahoma", 9F);
             this.button12.Location = new System.Drawing.Point(136, 75);
             this.button12.Name = "button12";

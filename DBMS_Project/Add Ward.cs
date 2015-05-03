@@ -24,6 +24,14 @@ namespace DBApp01
         {
             using (SQLiteConnection con = new SQLiteConnection(connectStr))
             {
+                string[] format = new string[] { "yyyy-MM-dd HH:mm:ss" };
+                DateTime datetime;
+
+                if (!DateTime.TryParseExact(textBox2.Text, format, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.NoCurrentDateDefault, out datetime))
+                {
+                    MessageBox.Show("Please enter a vaild Time", "", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                    return;
+                }
 
                 try
                 {
@@ -63,19 +71,20 @@ namespace DBApp01
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 button2.Enabled = false;
+                return;
             }
 
-            int checkText;
-            if (int.TryParse(textBox1.Text, out checkText))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "^[a-zA-Z]+$"))
             {
                 MessageBox.Show("Please enter a valid type", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Text = "";
                 return;
             }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

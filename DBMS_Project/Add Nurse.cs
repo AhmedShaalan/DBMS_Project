@@ -22,8 +22,7 @@ namespace DBApp01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int checkText;
-            if (int.TryParse(textBox3.Text, out checkText))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "^[a-zA-Z]+$"))
             {
                 MessageBox.Show("Please enter a valid name", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -96,18 +95,10 @@ namespace DBApp01
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+            SubmitButton.Enabled = true;
             if (string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 SubmitButton.Enabled = false;
-            }
-            SubmitButton.Enabled = true;
-
-            int checkNum;
-            if (int.TryParse(textBox3.Text, out checkNum))
-            {
-                MessageBox.Show("Name must be text only!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox3.Text = "";
                 return;
             }
         }
